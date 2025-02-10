@@ -8,7 +8,7 @@ contract Voting is Ownable{
     mapping (address => bool) public whiteList;
     struct Voter {
         address voterAddress;
-        bool isRegistered; // en considérant que whiteListed = isRegistered
+        bool isRegistered; // En considérant que whiteListed = isRegistered
         bool hasVoted;
         uint votedProposalId;
     }
